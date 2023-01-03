@@ -1,0 +1,78 @@
+body{
+    background-color: #dddddd;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(2, 2, 2);
+    margin: 0;
+}
+
+.container{
+    width: 850px;
+    margin: 0 auto;
+}
+
+.profile{
+    text-align: center;
+}
+
+.foto{
+    width: 200px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 30px 30px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    margin-top: 0;
+    font-style: italic;
+    color: rgb(63, 63, 63);
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+h4{
+    margin-bottom: 0;
+}
+
+h5{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p{
+    line-height: 25px;
+    margin-top: 0px;
+}
+
+.github{
+    margin: 0px 15px;
+}
+
+.social-links{
+    text-decoration: none;
+}
+
+.social-icons{
+    width: 25px;
+}
+
+.jobs-list{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0px;
+}
