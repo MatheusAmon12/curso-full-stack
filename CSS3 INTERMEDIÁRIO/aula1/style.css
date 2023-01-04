@@ -1,0 +1,31 @@
+/*Combinadores*/
+
+.exemplo{
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px;
+}
+
+.exemplo1 .red{
+    color: red;
+}
+
+p.red{
+    color: red;
+}
+
+h1, h2, h3{
+    color: blue;
+}
+
+.exemplo2 > p{
+    color: darkcyan;
+}
+
+.exemplo3 + p{ /*Atribui a regra para o primeiro irmão encontrado, no caso, o irmão primeiro da class exemplo3*/
+    color: chocolate;
+}
+
+.exemplo4 ~ p{ /*Atribui a regra para todos irmãos encontrados*/
+    color: green;
+}
