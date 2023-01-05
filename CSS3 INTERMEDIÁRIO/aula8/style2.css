@@ -1,0 +1,17 @@
+.conteudo{
+    position: relative;/*no caso, essa é a tag pai do .quadrado, logo, toda movimentação será relativa a ele.*/
+    height: 500px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.quadrado{
+    position: absolute;/*como visto, a movimentação dele sempre será relativa ao body, mesmo ele não sendo a tag pai. Mas é possível alterar colocando o posicionamento relativo na verdadeira tag pai*/
+    left: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}

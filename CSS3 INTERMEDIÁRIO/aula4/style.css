@@ -1,0 +1,51 @@
+/*Pseudo classes*/
+
+a{
+    color: red;
+}
+
+a:hover{ /*ao passar o mouse por cima*/
+    color: green;
+    font-weight: bold;
+}
+
+a:visited{ /*quando o link já foi visitado*/
+    color: blue;
+}
+
+a:active{ /*quando clico no link e seguro*/
+    color: darkmagenta;
+}
+
+a:hover + .caixa{ /*Combinção de seletores, no caso, irmãos*/
+    display: block;
+}
+
+.caixa{
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+
+.caixa:hover{
+    background-color: green;
+    width: 10px;
+    height: 10px;
+}
+
+ul li:first-child{ /*modifica apenas o primeiro filho do seletor pai*/
+    color: red;
+}
+
+ul li:last-child{ /*modifica o último filho do seletor pai*/
+    color: blue;
+}
+
+.exemplo p:first-child{ /*combinação de seletores*/
+    color: red;
+}
+
+.exemplo2 p:nth-child(5){ /*seleciona qualquer filho, independente da ordem*/
+    color: orange;
+}

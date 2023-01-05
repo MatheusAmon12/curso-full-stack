@@ -1,0 +1,57 @@
+
+a {
+  color: red;
+}
+
+a:hover {/*altera o elemento quando o mouse passa por cima*/
+  color: green;
+  font-weight: bold;
+}
+
+a:hover + .caixa {/*combinação de seletores, onde ao passar o mouse no link a primeira tag irmã sofrerá as mudanças */
+  display: block;
+}
+
+a:visited { /*altera quando o link já foi visitado*/
+  color: yellow;
+}
+
+a:active { /*altera quando o link for pressionado e segurado com o mouse*/
+  color: pink;
+}
+
+.caixa {
+  display: none;
+  width: 150px;
+  height: 150px;
+  background: black;
+}
+
+.caixa:hover{
+  width: 10px;
+  height: 10px;
+  background: green;
+}
+
+
+
+ul li:first-child { /*altera o primeiro elemento filho*/
+  color: red;
+}
+
+
+ul li:last-child { /*altera o último elemento filho*/ 
+  color: blue;
+}
+
+
+
+.exemplo p:first-child { /*combinação de seletores*/
+  color: green;
+}
+
+
+
+.exemplo2 p:nth-child(5) { /*altera um elemento filho específico*/
+  color: orange;
+}

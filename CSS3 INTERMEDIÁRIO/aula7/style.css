@@ -1,0 +1,35 @@
+/*Pseudo elementos*/
+
+::selection{ /*não se aplica a uma tag em específco, mas a todo o documento, logo basta inicar com ::, altera a cor de fundo de uma seleção, assim como a cor da fonte*/
+    color: black;
+    background-color: gold;
+}
+
+p::first-line{ /*altera a primeira linha do conteúdo, esse resultado não é possível enquadrando a parte desejada em spans, divs, etc... Pois o texto se adequa ao tamanho de tela e a primeira linha pode sofrer alteração em seu comprimento*/
+    color: aqua;
+}
+
+p::first-letter{ /*Altera a primeira letra do conteúdo*/
+    color: red;
+    font-size: 50px;
+}
+
+h1::before{ /*insere conteúdo antes da tag a qual esta sendo aplicado, é obrigatório a presença do 'content', mesmo que seja vazio 'content: ""'*/
+    background: url('https://cdn-icons-png.flaticon.com/512/3902/3902021.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+}
+
+h1::after{ /*insere conteúdo depois da tag a qual esta sendo aplicado, é obrigatório a presença do 'content', mesmo que seja vazio 'content: ""'*/
+    background: url('https://cdn-icons-png.flaticon.com/512/3902/3902021.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    content: '';
+    margin-left: 10px;
+}

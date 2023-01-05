@@ -1,0 +1,17 @@
+body{
+    background: url('https://img.freepik.com/vetores-gratis/vetor-de-fundo-de-ciencia-de-tecnologia-medica-em-azul-com-espaco-em-branco_53876-117739.jpg?w=2000') no-repeat;
+    background-size: cover;
+}
+
+ul{
+    background-color: gray;
+    padding: 10px;
+    /*display: none;*//*Oculta o elemento e permite que o lugar seja ocupado por outro conteúdo*/
+    /*visibility: hidden;*//*Oculta o elemento, mas mantém o lugar ocupado por ele*/
+    opacity: 0.5;/*Oculta o elemento quando setado em 0, o máximo é 1 (valor natural), quanto mais próximo de 0 mais transparente*/
+}
+
+ul li{
+    display: inline;
+    margin: 0 20px;
+}

@@ -1,0 +1,22 @@
+/*Text styles*/
+
+h1{
+    text-shadow: 2px 2px 2px red;
+}
+
+p{
+    color: green;
+    text-align: justify;
+    font-weight: bold;
+    font-style: oblique;
+    /*font-variant: small-caps;*/
+    text-transform: lowercase;
+    text-indent: 50px;
+    word-spacing: 20px;
+    line-height: 50px;
+}
+
+a{
+    text-decoration: line-through;
+    letter-spacing: 20px;
+}
