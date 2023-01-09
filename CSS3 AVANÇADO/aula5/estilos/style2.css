@@ -1,0 +1,44 @@
+div{
+    position: relative;
+}
+
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    font-weight: bold;
+    opacity: .6;
+}
+
+.box{
+    width: 20vw;
+    height: 25vh;
+    transition-duration: 1000ms;
+}
+
+.box:hover{
+    width: 40vw;
+}
+
+.box1{
+    background-color: lightseagreen;
+    transition-timing-function: ease;
+}
+
+.box2{
+    background-color: aqua;
+    transition-timing-function: ease-in;
+}
+
+.box3{
+    background-color: aquamarine;
+    transition-timing-function: ease-out;
+}
+
+.box4{
+    background-color: cadetblue;
+    transition-timing-function: ea;
+}

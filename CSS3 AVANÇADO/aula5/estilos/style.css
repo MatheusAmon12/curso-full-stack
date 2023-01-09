@@ -1,0 +1,24 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 100px 0 0 100px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    cursor: pointer;
+    /*transition-duration: 500ms; 
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 500ms;*/
+
+    transition: widht 500ms ease-in 500ms;
+}
+
+.box:hover{
+    width: 300px;
+    background-color: black;
+}

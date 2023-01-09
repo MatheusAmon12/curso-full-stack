@@ -1,0 +1,24 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 100px 0 0 100px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    cursor: pointer;
+
+    transition-duration: 500ms;
+    transform-origin: 40% 90%;
+}
+
+.box:hover{
+    box-shadow: 0 0 5px red;
+    background-color: black;
+    transform: rotate(360deg);
+    /*transform: translate(50px, 100px) rotate(360deg) scale(.2, .2);*/
+    /*transform: skew(50deg, 50deg);*/
+}

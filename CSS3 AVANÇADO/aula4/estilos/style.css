@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+}
+
+.box2{
+    width: 100vw;
+    height: 130vh;
+    background-color: red;
+}

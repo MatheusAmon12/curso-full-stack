@@ -1,0 +1,44 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 100px 0 0 100px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    cursor: pointer;
+
+    animation-name: minhaAnimacao;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes minhaAnimacao {
+    /*from{
+        background-color: red;
+    }
+
+    to{
+        background-color: black;
+        transform: rotate(360deg);
+    }*/
+    0%{
+        background-color: red;
+    }
+
+    50%{
+        border: 15px solid yellow;
+    }
+
+    100%{
+        border: 0px solid yellow;
+        background-color: black;
+        /*transform: rotate(360deg);*/
+    }
+}
