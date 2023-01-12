@@ -1,0 +1,39 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    height: 600px;
+
+}
+
+.red{
+    flex-grow: 2;
+    align-self: center;/*Faz o alinhamento individual do item*/
+    order: 3;
+    background-color: red;
+}
+
+.blue{
+    flex-grow: 3;
+    align-self: flex-end;
+    order: 4;
+    background-color: blue;
+}
+
+.yellow{
+    order: 3;
+    background-color: yellow;
+}
+
+.green{
+    align-self: center;
+    order: 1;
+    background-color: green;
+}

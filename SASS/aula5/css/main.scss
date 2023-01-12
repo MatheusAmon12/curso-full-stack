@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'extends';
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    .box{
+        padding: 20px;
+        width: 30%;
+        background-color: white;
+        color: $color-primary;
+        border-radius: 8px;
+
+        &.active{/*Quando tratamos de um elemento irmão iniciamos com &*/
+            background-color: $color-secondary;
+        }
+
+        h2{
+            font: {
+                size: 30px; /*A título de conhecimento*/
+                weight: 500;
+            };
+            margin: {
+                top:  10px;
+                left: 20px;
+                right: 30px;
+                bottom: 22px;
+            };
+        }
+
+        p{
+            font-size: 18px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+
+        a{
+            color: green;
+            
+            &:hover{/*O mesmo vale para pseudo classes e elementos*/
+                color: yellow;
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+
+        .success{
+            @extend %box-alert;
+            @include bg-effect(success);
+            color: white;
+        }
+
+        .danger{
+            @extend %box-alert;
+            @include bg-effect(danger);
+            color: white;
+        }
+
+        .warning{
+            @extend %box-alert;
+            @include bg-effect(warning);
+        }
+
+        ul{
+            @include reset-list(100px, 10px, square);/*Chamamos o mixin no elemento que queremos a estilização*/
+        }
+    }
+
+
+
+}

@@ -1,0 +1,36 @@
+.box{
+    width: 150px;
+    height: 50px;
+}
+
+.container{
+    background-color: silver;
+    display: flex;
+    /*flex-direction: row; Dispõe os elementos em linha, este é o padrão*/
+    /*flex-direction: column; Dispõe os elementos em coluna*/
+    /*flex-direction: row-reverse; Dispõe em linha os elementos, coloca-os da direita pra esquerda e inverte a ordem*/
+    /*flex-direction: column-reverse; Dispõe em coluna e coloca-os em ordem inversa*/
+
+    /*O padrão do flex é fazer com que todo conteúdo se adeque a tela em que está, então se eu diminui a view port width até o mínimo os elementos serão espremidos ao máximo*/
+    /*flex-wrap: no-wrap; Padrão*/
+    /*flex-wrap: wrap; Faz com que, quando o contéudo exceder a view port width, quebrem para a próxima linha*/
+    /*flex-wrap: wrap-reverse; Quebra os elementos para a próxima linha, mas coloca-os em ordem invertida, do último para o primeiro elemento*/
+
+    flex-flow: row no-wrap; /*Short hand*/
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}

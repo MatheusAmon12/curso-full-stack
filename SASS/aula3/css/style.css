@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*Assim funciona a declaração de variáveis no SASS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.container .box {
+  padding: 20px;
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
+.container .box.active { /*Quando tratamos de um elemento irmão iniciamos com &*/
+  background-color: red;
+}
+.container .box h2 {
+  font-size: 30px; /*A título de conhecimento*/
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 22px;
+}
+.container .box p {
+  font-size: 18px;
+}
+.container .box p.hidden {
+  display: none;
+}
+.container .box a {
+  color: green;
+}
+.container .box a:hover { /*O mesmo vale para pseudo classes e elementos*/
+  color: yellow;
+}
+.container .box a:hover + p.hidden {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

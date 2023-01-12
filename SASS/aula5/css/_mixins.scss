@@ -1,0 +1,23 @@
+@mixin reset-list($margem: 0, $espacamento: 0, $estilo: none){/*O mixin atua como uma função, nela podemos passar parâmetros ou não, e definir parâmetros padrões para quando não for passado valores para ela.*/
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+}
+
+@mixin bg-effect($effect){
+    @if $effect == success{
+        background-color: green;
+    }
+
+    @else if $effect == warning{
+        background-color: yellow;
+    }
+
+    @else if $effect == danger{
+        background-color: red;
+    }
+
+    @else{
+        background-color: white;
+    }
+}

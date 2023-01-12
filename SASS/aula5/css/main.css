@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*Assim funciona a declaração de variáveis no SASS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container .box .warning, .container .box .danger, .container .box .success {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px black;
+  background-color: green;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.container .box {
+  padding: 20px;
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
+.container .box.active { /*Quando tratamos de um elemento irmão iniciamos com &*/
+  background-color: red;
+}
+.container .box h2 {
+  font-size: 30px; /*A título de conhecimento*/
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 22px;
+}
+.container .box p {
+  font-size: 18px;
+}
+.container .box p.hidden {
+  display: none;
+}
+.container .box a {
+  color: green;
+}
+.container .box a:hover { /*O mesmo vale para pseudo classes e elementos*/
+  color: yellow;
+}
+.container .box a:hover + p.hidden {
+  display: block;
+}
+.container .box .success {
+  background-color: green;
+  color: white;
+}
+.container .box .danger {
+  background-color: red;
+  color: white;
+}
+.container .box .warning {
+  background-color: yellow;
+}
+.container .box ul {
+  /*O mixin atua como uma função, nela podemos passar parâmetros ou não, e definir parâmetros padrões para quando não for passado valores para ela.*/
+  margin: 100px;
+  padding: 10px;
+  list-style: square;
+  /*Chamamos o mixin no elemento que queremos a estilização*/
+}/*# sourceMappingURL=main.css.map */

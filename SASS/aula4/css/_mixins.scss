@@ -1,0 +1,5 @@
+@mixin reset-list($margem: 0, $espacamento: 0, $estilo: none){/*O mixin atua como uma função, nela podemos passar parâmetros ou não, e definir parâmetros padrões para quando não for passado valores para ela.*/
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+}

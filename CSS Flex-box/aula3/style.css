@@ -1,0 +1,32 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;/*Alinha ao centro na horizontal*/
+    align-content: center;/*Alinha ao centro na vertical*/ 
+    flex-wrap: wrap;
+    height: 600px;
+
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
