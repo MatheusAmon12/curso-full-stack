@@ -1,0 +1,25 @@
+.menuMobile{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 150px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    transition: all 800ms ease;
+}
+
+.menuMobile.aberto{/*Quando colocamos juntos estamos dizendo que estão no mesmo nível, não que são filhos.*/
+    left: 0%;
+}
+
+.botaoMenu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.botaoMenu:hover{
+    font-weight: bold;
+    cursor: pointer;
+}

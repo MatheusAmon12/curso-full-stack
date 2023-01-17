@@ -1,0 +1,1 @@
+// GLOBAL: é algo que está disponível em qualquer parte do código
