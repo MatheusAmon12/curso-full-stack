@@ -1,34 +1,41 @@
-const xhttp = new XMLHttpRequest()
-const inputCep = document.querySelector('#cep')
+const cep = document.querySelector('#cep')
+const rua = document.querySelector('#rua')
+const bairro = document.querySelector('#bairro')
+const cidade = document.querySelector('#cidade')
+const estado = document.querySelector('#estado')
+const ibge = document.querySelector('#ibge')
+const button = document.querySelector('.button')
 
-inputCep.onblur = () => fetch(`​viacep.com.br/ws/${inputCep.value}/json/`, 'GET')
-    .then(completeInput)
-    .catch(exibirErro)
-
-function completeInput(data){
-    console.log('Tudo ok')
+const configs = {
+    method: 'GET',
 }
 
-function exibirErro(erro){
-    console.log(erro)
+function json(response){
+    return response.json()
 }
 
-function fetch(url, method){
-    return new Promise((resolve, reject) => {
-        xhttp.onreadystatechange = function(){
-            if (this.readyState == 4 && this.status == 200){
-                const response = JSON.parse(this.responseText)
+function autoComplete(data){
+    setTimeout(() => {
+        rua.value = data.logradouro
+        bairro.value = data.bairro
+        cidade.value = data.localidade
+        estado.value = data.uf
+        ibge.value = data.ibge
+    }, 1000);
 
-                resolve(response)
-                console.log(response)
-            }
-
-            if (this.status === 404){
-                const error =  'Não foi possível estabelecer conexão!'
-                reject(error)
-            }
-        }
-        xhttp.open(method, url, true)
-        xhttp.send()
-    })
+    rua.value = "..."
+    bairro.value = "..."
+    cidade.value = "..."
+    estado.value = "..."
+    ibge.value = "..."
 }
+
+function erro(){
+    console.log('Erro')
+}
+
+cep.onblur = () =>
+    fetch(`https://viacep.com.br/ws/${cep.value}/json/`, configs)
+        .then(json)
+        .then(autoComplete)
+        .catch(erro)
