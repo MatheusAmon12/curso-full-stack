@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('background.jpg') fixed center center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.section{
+    background-color: rgba(0, 0, 0, 0.97);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 0;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section > h1{
+    color: orangered;
+    font-size: 2.5em;
+}
+
+.section label{
+    color: white;
+    font-size: 1.4em;
+}
+.section .input{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.section .btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background-color: darkgreen;
+    transition: all 600ms;
+}
+
+.section .btn:hover{
+    scale: 1.1;
+}
+
+.section .result{
+    color: white;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+}
